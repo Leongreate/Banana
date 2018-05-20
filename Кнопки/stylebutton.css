@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+  background-image: url('fon.png');
+  background-position: cover;
+   background-repeat: no-repeat;
+   display: flex;
+}
+.mainwindow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  flex:60%;
+}
+.mainwindow div {
+  }
+header {
+  display: flex;
+    flex-direction: row;
+    height: 5em;
+    width: 50%;
+}
+.fff {
+  flex: 1;
+width: 50%;
+    }
+  content {
+    margin-top: 10em;
+  }
+p {
+  padding-right: 1em;
+vertical-align: middle;
+  text-shadow: black 1px -1px 1px;
+  text-indent: 1em; /* Отступ первой строки */
+  text-align: justify; /* Выравнивание по ширине */
+  letter-spacing: 2px;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Indie Flower';
+  z-index: 3;
+}
+h1 {
+  letter-spacing: 0.2em;
+    font-family: 'Shadows Into Light';
+    vertical-align: middle;
+    font-size: 2em;
+    -webkit-animation: pulsate 2s linear infinite;
+    color: white;
+    padding-left: 1em;
+  }
+ img.rot {
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 5s linear 0s normal none infinite running rot;
+  width: 100px; 
+}
+@keyframes rot {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 90, 0, 360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 90, 0, 360deg);
+  }
+}
+.menu {
+  flex:40%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu div{
+  display: flex;
+  margin-bottom: 3em;
+  height: 100%;
+  width: 50%;
+}
+.cont1 {
+  padding-left: 0em;
+  padding-top: 1.4em;
+}
+.cont2 {
+  padding-left: 3em;
+  padding-top: 0.5em;
+}
+.cont3 {
+  padding-left: 6em;
+  padding-top: 0.5em;
+}
+.cont4 {
+  padding-left: 9em;
+  padding-top: 0.5em;
+}
+.cont5 {
+  padding-left: 10em;
+  padding-top: 0.5em;
+}
+.cont6 {
+  padding-left: 9em;
+  padding-top: 0.5em;
+}
+input.button4 {
+  letter-spacing: 0.12em;
+  position: relative;
+  display: inline-block;
+  font-family: 'Shadows Into Light';
+  font-size: 1.4em;
+  font-weight: 600;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  padding: .3em 1em;
+  border:none;
+  border-radius: 15px;
+  background: none;
+  -webkit-animation: pulsate 2s linear infinite;
+  animation: pulsate 2s linear infinite;
+    outline: none !important;
+}
+input.button4:hover {
+box-shadow: inset #fff 0 -1px 1px, inset #fff 0 -1px 1px, #fff 0 0 0 1px;/* rgba(0,0,0,.3) 0 -2px 2px;*/
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+input.button4:active {
+  top: 1px;
+}
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -2px rgba(0,0,0,.3), 0 0 5px #fff, 0 0 11px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -2px rgba(0,0,0,.3), 0 0 5px #fff, 0 0 11px #fff;}
+}
